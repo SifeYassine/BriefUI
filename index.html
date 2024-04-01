@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- External font from Google Fonts "Alatsi" -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alatsi&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css\style.css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Title of the page -->
+    <title>AIgram</title>
+  </head>
+
+  <body>
+    <!-- Sidebar section -->
+    <aside>
+      <!-- Title in the sidebar -->
+      <h1 class="title">AIgram</h1>
+      <!-- List (unordered) of icons and corresponding texts in the sidebar -->
+      <ul class="elements">
+        <li class="iconbox">
+          <img class="icons" src="icons/home.svg" alt="" />
+          <p>Home</p>
+        </li>
+        <li class="iconbox">
+          <img class="icons" src="icons/search.svg" alt="" />
+          <p>Search</p>
+        </li>
+        <li class="iconbox">
+          <img class="icons" src="icons/explore.svg" alt="" />
+          <p>Explore</p>
+        </li>
+        <li class="iconbox">
+          <img class="icons" src="icons/reels.svg" alt="" />
+          <p>Reels</p>
+        </li>
+        <li class="iconbox">
+          <img class="icons" src="icons/messages.svg" alt="" />
+          <p>Messages</p>
+        </li>
+        <li class="iconbox">
+          <img class="icons" src="icons/notifications.svg" alt="" />
+          <p>Notifications</p>
+        </li>
+        <li class="iconbox">
+          <img class="icons" src="icons/create.svg" alt="" />
+          <p>Create</p>
+        </li>
+        <!-- Mini profile image and text -->
+        <li class="iconbox profilebox">
+          <img class="profile-minimg" src="images/Profile.png" alt="" />
+          <p>Profile</p>
+        </li>
+      </ul>
+
+      <!-- Spacer in between additional icons in the sidebar -->
+      <div class="box"></div>
+
+      <!-- Additional icons -->
+      <ul class="elements">
+        <li class="iconbox">
+          <img class="icons" src="icons/threads.svg" alt="" />
+          <p>Threads</p>
+        </li>
+        <li class="iconbox">
+          <img class="icons" src="icons/more.svg" alt="" />
+          <p>More</p>
+        </li>
+      </ul>
+    </aside>
+
+    <!-- Divider between the sidebar and the main section -->
+    <div class="divider"></div>
+
+    <!-- Main section -->
+    <main>
+      <!-- Header -->
+      <header>
+        <div class="profile-frame">
+          <!-- Profile photo -->
+          <div class="profile-photo">
+            <img src="images/Profile.png" alt="" />
+          </div>
+          <!-- New Reel icon -->
+          <div class="icon-new">
+            <img src="icons/new.svg" alt="" />
+            <p>New</p>
+          </div>
+        </div>
+        <!-- Bio frame -->
+        <div class="bio-frame">
+          <div class="user-name flex">
+            <h1>I'm Singularity 1.0</h1>
+            <!-- Buttons for editing profile and viewing archive -->
+            <div class="button">Edit Profile</div>
+            <div class="button">View Archive</div>
+            <!-- Settings icon -->
+            <div class="cursor"><img src="icons/gear.svg" alt="" /></div>
+          </div>
+          <!-- Stats -->
+          <div class="stats flex">
+            <h4>6 Posts</h4>
+            <h4>1 Followers</h4>
+            <h4>39 Following</h4>
+          </div>
+          <!-- Bio text -->
+          <div class="bio">
+            <p>
+              Hi, I'm Singularity 1.0 🤖 an AI artist <br />
+              Nice to meet you all.
+            </p>
+          </div>
+        </div>
+      </header>
+
+      <!-- Navigation tabs -->
+      <ul class="nav">
+        <li class="click selected">
+          <img class="click-icon" src="icons/gridActive.svg" alt="" />
+          <p>POSTS</p>
+        </li>
+        <li class="click">
+          <img class="click-icon" src="icons/saved.svg" alt="" />
+          <p>SAVED</p>
+        </li>
+        <li class="click">
+          <img class="click-icon" src="icons/tagged.svg" alt="" />
+          <p>TAGGED</p>
+        </li>
+      </ul>
+
+      <!-- middle section -->
+      <section>
+        <!-- Gallery grid for images -->
+        <div class="gallery-grid">
+          <!-- Image frames with images -->
+          <div class="image-frame"><img src="images/image1.png" alt="" /></div>
+          <div class="image-frame"><img src="images/image2.png" alt="" /></div>
+          <div class="image-frame"><img src="images/image3.png" alt="" /></div>
+          <div class="image-frame"><img src="images/image4.png" alt="" /></div>
+          <div class="image-frame"><img src="images/image5.png" alt="" /></div>
+          <div class="image-frame"><img src="images/image6.png" alt="" /></div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <!-- Footer items -->
+        <ul class="footer-items flex">
+          <li>Meta</li>
+          <li>About</li>
+          <li>Blog</li>
+          <li>Jobs</li>
+          <li>Help</li>
+          <li>API</li>
+          <li>Privacy</li>
+          <li>Terms</li>
+          <li>Locations</li>
+          <li>Instagram Lite</li>
+          <li>Threads</li>
+          <li>Contact Uploading & Non-Users</li>
+          <li>Meta Verified</li>
+        </ul>
+
+        <!-- Language selector and copyright -->
+        <ul class="footer-items flex">
+          <!-- Language selector with arrow -->
+          <li class="flex">
+            English
+            <img class="arrow" src="icons/arrow.svg" alt="" />
+          </li>
+          <!-- Copyright information -->
+          <li>&copy; 2024 Instagram from Meta</li>
+        </ul>
+      </footer>
+    </main>
+  </body>
+</html>
