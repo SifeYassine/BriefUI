@@ -19,78 +19,68 @@ body {
   display: flex;
   font-family: "Alatsi", sans-serif; /* External font from Google Fonts "Alatsi" */
   background-color: black;
-  color: white;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 /* Sidebar */
 aside {
   position: fixed;
   width: 16vw;
-  height: 100vh;
-  padding: 2% 0 0 2%;
-}
-
-/* The divider between sidebar and main */
-.divider {
-  position: fixed;
-  top: 3vh;
-  left: 16vw;
-  height: 95vh;
-  border: 1px solid #363638;
+  padding: 10px 0 0 20px;
+  border-right: 1px solid #363638;
 }
 
 .title {
-  font-size: 30px;
-  margin-bottom: 40px;
+  margin: 20px 0 35px 0;
   cursor: pointer;
 }
 
 .iconbox {
   display: flex;
-  align-items: end;
+  align-content: center;
   margin-bottom: 20px;
   cursor: pointer;
 }
 
 .icons {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   margin-right: 10px;
 }
 
 /* Profile mini image in sidebar */
 .profile-minimg {
-  border: 4px solid white;
-  border-radius: 50px;
-  width: 42px;
-  height: 42px;
+  width: 32px;
+  height: 32px;
+  border: 3px solid rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
 }
 
 .profilebox {
+  display: flex;
+  align-items: center;
   margin-top: 30px;
 }
 
 .profilebox p {
-  margin: 0 0 8px 15px;
+  margin-left: 15px;
 }
 
 /* Spacer in the sidebar */
 .box {
-  height: 10vh;
+  height: 18vh;
 }
 
 /* Main section */
 main {
   width: 84vw;
-  height: auto; /* to make height automatically adjustable */
   margin-left: 16vw; /* bacause the sidebar is 16vw wide */
 }
 
 /* Header */
 header {
   display: flex;
-  height: auto;
-  margin-bottom: 8px;
+  margin-bottom: 20px;
   padding-top: 3%;
 }
 
@@ -100,142 +90,124 @@ header {
   align-items: flex-end; /* the items are arranged to the left */
   width: 30vw;
   height: auto;
-  padding-right: 3%;
-}
-
-.profile-photo {
-  height: auto;
+  padding-right: 1%;
 }
 
 .profile-photo img {
-  width: 130px;
-  height: 130px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   cursor: pointer;
 }
 
 .icon-new {
-  height: auto;
-  margin: 8% 15% 0 0;
+  font-size: small;
+  margin: 6% 15% 0 0;
   text-align: center;
   cursor: pointer;
 }
 
 .bio-frame {
-  width: auto;
-  height: 50%; /* to make height take up 50% of the parent container's height */
   padding-left: 3%;
 }
 
 .bio-frame h1 {
+  font-size: 20px;
   margin-right: 20px;
-  font-size: 23px;
 }
 
 .button {
+  width: 100px;
+  height: 32px;
   background-color: #363638;
   border-radius: 10px;
-  width: 108px;
-  height: 38px;
-  text-align: center;
-  margin: 0 10px 0 10px;
-  padding-top: 8px;
+  font-size: 14px;
+  margin: 0 5px;
+  padding-top: 6px;
   cursor: pointer;
 }
 
 .stats {
+  width: 22vw;
   justify-content: space-between;
-  padding: 2% 20% 5% 0;
+  margin: 20px 0;
 }
 
 .user-name {
-  margin-bottom: 20px;
+  text-align: center;
   align-items: center;
 }
 
 .nav {
-  list-style-type: none; /* to remove the bullet points */
   display: flex;
-  justify-content: center; /* to horizontally center the items */
-  align-items: center; /* to vertically center the items */
-  width: 50vw;
-  height: 5vh;
-  border-top: 3px solid #363638;
-  margin: 0 0 15px 20%;
+  justify-content: center;
+  width: 52vw;
+  height: 6vh;
+  border-top: 1px solid #363638;
+  margin: 0 0 14px 18.5%;
 }
 
 .click {
   display: flex;
   height: 100%;
+  align-items: end;
+  font-size: 13px;
   color: #363638;
-  margin: 0 25px 5px 5px;
-  padding-top: 5px;
+  margin: 0 20px;
   cursor: pointer;
 }
 
 /* utility class for the selected items in the nav */
 .selected {
-  color: white;
-  border-top: 4px solid white;
-}
-
-.click p {
-  margin-top: 6px;
+  color: rgba(255, 255, 255, 0.7);
+  border-top: 3px solid rgba(255, 255, 255, 0.7);
 }
 
 .click-icon {
-  margin: 4px 8px 0 0;
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
 }
 
 /* Middle section */
 section {
   display: flex;
-  justify-content: center; /* horizontally center items */
-  align-items: center; /* vertically center items */
-  height: auto;
+  justify-content: center; /* to center the content horizontally */
 }
 
 /* Gallery grid for images */
 .gallery-grid {
-  display: grid; /* to make grid */
+  display: grid; /* to make a grid */
   grid-template-columns: repeat(3, 1fr); /* 3 columns of equal width */
-  column-gap: 5px; /* to add space between columns */
-  row-gap: 5px; /* to add space between rows */
-  width: 50vw; /* to make width take up 50% of the viewpoint width */
+  column-gap: 6px; /* to add space between columns */
+  row-gap: 6px; /* to add space between rows */
+  width: 52vw; /* to make width take up 50% of the viewpoint width */
   height: 80vh; /* to make height take up 80% of the viewpoint height */
-}
-
-.image-frame {
-  width: 100%;
-  height: 100%;
 }
 
 .image-frame img {
   width: 100%; /* to make width of images take up 100% of their container frame's width */
   height: 100%; /* to make height of images take up 100% of their container frame's height */
-  object-fit: cover; /* to make images cover the container frame */
   cursor: pointer;
 }
 
 /* Footer */
 footer {
-  height: 11vh;
   display: flex;
   flex-direction: column; /* to keep the 1st & 2nd lines of items in the footer arranged vertically */
-  justify-content: center; /* to horizontally center the items */
-  align-items: center; /* to vertically center the items */
+  height: 10vh;
+  margin-top: 20px;
 }
 
 .footer-items {
   list-style-type: none; /* to remove the bullet points */
   justify-content: center;
-  align-items: center;
   color: #363638;
-  font-size: 13px;
 }
 
 .footer-items li {
   margin: 5px;
+  font-size: 12px;
   cursor: pointer;
 }
 
